@@ -1,0 +1,66 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=936
+
+Karma DeKompiler
+NewsPaper Edition
+
+Dedications To:
+
+1. Bogdan AGAPIE and I know everything. I know some VIM. He knows the rest.
+
+2. Kevin LEGAN, my former boss, because vIM is the second nature for hIM.
+
+
+The purpose of the program:
+To find how many votes of each kind generated the total score.
+Example:
+If the total score is 1, from 8 votes, the only combination that generates this total score is:
+- 1 votes of  4 points
+- 2 vote  of  1 points
+- 5 votes of -1 points
+After the program generates these numbers, it will display a visual statistic and it will make some recommendations based on that statistic ( the recommendations will be in the next release ).
+
+Constructive criticism is welcomed, but I can also handle some encouragement :-)
+
+
+Frequently unAsked Questions:
+
+Q1) Why "Decompiler"?
+A1) Because is not always possible to find the original combination that generated the total score.
+Example:
+Total score = 2155
+Votes = 659 
+There are at least 3 valid combinations:
+
+- 516 votes of  4 points
+- 117 votes of  1 points
+- 26  votes of -1 points
+ 
+- 518 votes of  4 points
+- 112 votes of  1 points
+- 29  votes of -1 points
+
+- 520 votes of  4 points
+- 107 votes of  1 points
+- 32  votes of -1 points
+
+However, in all of them, the number of "4-points" votes is much bigger than the number of "1-points" votes, which means this script is appreciated as "Life changing".
+
+
+Q2) Why "DeKompiler"?
+A2) Because it's "Karma" and not "Carma".
+
+
+Q3) Why "NewsPaper Edition"?
+A3) Sometimes, newspapers give the reader verifiable data, failing to mention that is not the only possible data. The program will generate only one valid combination, even if there are more than one. A "Respectable NewsPaper Edition" is not possible, at least with the current Karma rating.
+
+
+Q4) Why the first version is 0?
+A4) Because, the first revision has exactly 0 code.
+
+
+Q5) What's the idea behind the program?
+A5) The program generates all the possible combination, in a common sense range, and it displays the first one found. If no combination is found, it means that there is an error on the site or (most probable) the user did not enter valid results.
+
+
+Q6) Why do I have to change the values for "score" and "votes" INSIDE the script?
+A6) Because the author learned vim 2 days before and he did not find how to read variables from the keyboard. Nevertheless,...it will be fixed in the new versions.
